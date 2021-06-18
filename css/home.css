@@ -1,0 +1,145 @@
+/* .view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
+    background-size: cover;
+} */
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: #CC9636;
+}
+
+@media screen and (max-width: 991px){
+  .navbar-toggler {
+    background-color: #50AA7D;
+  }
+  .nav-item {
+    border-bottom: 1px solid white;
+  }
+  .navbar-collapse{
+    background-color: #CC9636;
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-toggler {
+    background-color: #50AA7D;
+  }
+  #carousel-example-1 {
+    height: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 575px){
+  .navbar-collapse{
+    margin-top: 10px;
+    text-align: right;
+    padding-bottom: 20px;
+  }
+}
+
+.get-started-btn:hover{
+  box-shadow: none;
+  color: white;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.nav-item .link{
+  font-weight: 500;
+  /* font-family: 'Baloo Tammudu 2', cursive; */
+  font-family: poppins;
+  color: white;
+  padding: 8px ;
+}
+
+.nav-item .link:hover{
+  transition: ease .4s;
+}
+
+/* .active1{
+  border-bottom: 1px solid white;
+} */
+
+/*  */
+.nav-item .link::before {  
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  
+}
+
+.nav-item .link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.nav-item .link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #04730C;
+  z-index: -1;
+  transition: transform .6s ease;
+}
+
+
+/* html {
+  block-size: 100%;
+  inline-size: 100%;
+} */
+
+/* body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+} */
+/* 
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+} */
+/*  */
+.carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 99%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url(../img/carousel-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url(../img/carousel-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url(../img/carousel-3.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+    .get-started-btn{
+      border-radius: 100px;font-family: itim;background-color: #137946;border: 1px solid black;
+    }
